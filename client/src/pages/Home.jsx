@@ -60,12 +60,33 @@ export default function Home() {
           <br />
           We have a wide range of properties for you to choose from.
         </div>
-        <Link
+        {/* <Link
           to={"/search"}
           className="text-xs sm:text-sm text-blue-800 font-bold hover:underline"
         >
           Lets get started...
         </Link>
+        <Link
+          className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
+          to={"/create-listing"}
+        >
+          Create Listing
+        </Link> */}
+        <div className="flex flex-row gap-4 flex-wrap justify-start">
+          <Link
+            to={"/search"}
+            className="text-xs sm:text-sm text-white font-bold bg-blue-500 p-3 rounded-lg text-center hover:bg-blue-600"
+          >
+            Search Listing
+          </Link>
+
+          <Link
+            to={"/create-listing"}
+            className="text-xs sm:text-sm text-white font-bold bg-green-700 p-3 rounded-lg text-center hover:opacity-95"
+          >
+            Create Listing
+          </Link>
+        </div>
       </div>
 
       {/* swiper */}
